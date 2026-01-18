@@ -160,13 +160,32 @@ export function Hero() {
               <div className="absolute inset-0 border border-primary-100 rounded-full scale-125" />
 
               {/* Main image placeholder */}
-              <div className="w-full h-full rounded-3xl bg-gradient-to-br from-primary-100 to-accent-100 overflow-hidden flex items-center justify-center">
-                {/* Placeholder icon - sera reemplazado por foto real */}
-                <div className="text-center">
-                  <svg className="w-32 h-32 mx-auto text-primary-300" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              <div className="w-full h-full rounded-3xl bg-gradient-to-br from-primary-100 via-primary-50 to-accent-100 overflow-hidden relative">
+                {/* Decorative pattern */}
+                <div className="absolute inset-0 opacity-30">
+                  <svg className="w-full h-full" viewBox="0 0 400 400" fill="none">
+                    <circle cx="200" cy="150" r="80" className="fill-primary-200" />
+                    <circle cx="200" cy="150" r="60" className="fill-primary-100" />
+                    <path d="M120 280 Q200 220 280 280 Q200 340 120 280" className="fill-primary-200" />
+                    <circle cx="120" cy="100" r="20" className="fill-accent-200" />
+                    <circle cx="280" cy="100" r="15" className="fill-accent-200" />
+                    <circle cx="320" cy="200" r="25" className="fill-primary-200/50" />
+                    <circle cx="80" cy="220" r="18" className="fill-primary-200/50" />
                   </svg>
-                  <p className="text-primary-400 text-sm mt-4">Foto de Laura Vargas</p>
+                </div>
+                {/* Professional silhouette */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="w-48 h-48 rounded-full bg-gradient-to-b from-primary-200 to-primary-300 flex items-center justify-center">
+                      <svg className="w-28 h-28 text-primary-500" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C9.38 2 7.25 4.13 7.25 6.75c0 2.57 2.01 4.65 4.63 4.74.08-.01.16-.01.22 0h.07a4.738 4.738 0 004.58-4.74C16.75 4.13 14.62 2 12 2z"/>
+                        <path d="M17.08 14.15c-2.79-1.86-7.34-1.86-10.15 0-1.27.85-1.97 2-1.97 3.23s.7 2.37 1.96 3.21C8.32 21.53 10.16 22 12 22c1.84 0 3.68-.47 5.08-1.41 1.26-.85 1.96-1.99 1.96-3.23-.01-1.23-.71-2.37-1.96-3.21z"/>
+                      </svg>
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                      <p className="text-primary-600 text-sm font-medium whitespace-nowrap">Laura Vargas</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 

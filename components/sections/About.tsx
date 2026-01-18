@@ -54,15 +54,44 @@ export function About() {
           >
             {/* Main image placeholder */}
             <div className="relative">
-              <div className="aspect-[4/5] bg-gradient-to-br from-primary-100 to-primary-200 rounded-3xl overflow-hidden">
-                {/* Placeholder for Laura's photo */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-24 h-24 mx-auto text-primary-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                    <p className="text-primary-500 mt-4">Foto de Laura Vargas</p>
+              <div className="aspect-[4/5] bg-gradient-to-br from-primary-50 via-primary-100 to-accent-50 rounded-3xl overflow-hidden relative">
+                {/* Abstract decorative background */}
+                <div className="absolute inset-0">
+                  <svg className="w-full h-full opacity-20" viewBox="0 0 300 400" fill="none">
+                    <circle cx="150" cy="120" r="100" className="fill-primary-300" />
+                    <circle cx="80" cy="300" r="60" className="fill-accent-200" />
+                    <circle cx="220" cy="320" r="50" className="fill-primary-200" />
+                    <circle cx="250" cy="80" r="30" className="fill-accent-300" />
+                    <circle cx="50" cy="180" r="25" className="fill-primary-200" />
+                  </svg>
+                </div>
+                {/* Professional avatar placeholder */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative">
+                    {/* Avatar circle */}
+                    <div className="w-40 h-40 rounded-full bg-gradient-to-br from-primary-200 to-primary-300 shadow-xl flex items-center justify-center border-4 border-white/50">
+                      <svg className="w-24 h-24 text-primary-500" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C9.38 2 7.25 4.13 7.25 6.75c0 2.57 2.01 4.65 4.63 4.74.08-.01.16-.01.22 0h.07a4.738 4.738 0 004.58-4.74C16.75 4.13 14.62 2 12 2z"/>
+                        <path d="M17.08 14.15c-2.79-1.86-7.34-1.86-10.15 0-1.27.85-1.97 2-1.97 3.23s.7 2.37 1.96 3.21C8.32 21.53 10.16 22 12 22c1.84 0 3.68-.47 5.08-1.41 1.26-.85 1.96-1.99 1.96-3.23-.01-1.23-.71-2.37-1.96-3.21z"/>
+                      </svg>
+                    </div>
+                    {/* Name badge */}
+                    <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white px-6 py-3 rounded-2xl shadow-lg">
+                      <p className="text-primary-600 font-semibold whitespace-nowrap">Laura Vargas</p>
+                      <p className="text-gray-500 text-xs text-center">Podóloga</p>
+                    </div>
                   </div>
+                </div>
+                {/* Decorative elements */}
+                <div className="absolute top-6 right-6 w-16 h-16 bg-white/40 rounded-2xl backdrop-blur-sm flex items-center justify-center">
+                  <svg className="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                  </svg>
+                </div>
+                <div className="absolute bottom-20 left-6 w-14 h-14 bg-white/40 rounded-xl backdrop-blur-sm flex items-center justify-center">
+                  <svg className="w-7 h-7 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                  </svg>
                 </div>
               </div>
 
