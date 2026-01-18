@@ -22,11 +22,11 @@ export function Footer() {
                 <span className="text-2xl font-bold text-white">
                   Laura<span className="text-primary-400">Vargas</span>
                 </span>
-                <span className="block text-xs text-gray-500">Podologia</span>
+                <span className="block text-xs text-gray-500">Podología</span>
               </div>
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Clinica Podologica en Alcazar de San Juan. Cuidamos la salud de tus pies con profesionalidad y un trato cercano.
+              Clínica Podológica en Alcázar de San Juan. Cuidamos la salud de tus pies con profesionalidad y un trato cercano.
             </p>
             <div className="flex gap-4">
               {/* Instagram placeholder */}
@@ -56,7 +56,7 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Enlaces</h4>
             <ul className="space-y-3">
-              {['Servicios', 'Sobre mi', 'Testimonios', 'FAQ', 'Contacto'].map((link) => (
+              {['Servicios', 'Sobre mí', 'Testimonios', 'FAQ', 'Contacto'].map((link) => (
                 <li key={link}>
                   <Link
                     href={`#${link.toLowerCase().replace(' ', '-')}`}
@@ -78,7 +78,7 @@ export function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>C/ Santo Domingo 26<br />13600 Alcazar de San Juan<br />Ciudad Real</span>
+                <span>C/ Santo Domingo 26<br />13600 Alcázar de San Juan<br />Ciudad Real</span>
               </li>
               <li>
                 <a href="tel:+34659268858" className="flex gap-3 hover:text-primary-400 transition-colors">
@@ -104,7 +104,7 @@ export function Footer() {
                 <span>16:30 - 20:30</span>
               </li>
               <li className="flex justify-between">
-                <span className="text-gray-400">Sabado - Domingo</span>
+                <span className="text-gray-400">Sábado - Domingo</span>
                 <span>Cerrado</span>
               </li>
             </ul>
@@ -130,11 +130,11 @@ export function Footer() {
         <div className="container mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              © {currentYear} Clinica Podologica Laura Vargas. Todos los derechos reservados.
+              © {currentYear} Clínica Podológica Laura Vargas. Todos los derechos reservados.
             </p>
             <div className="flex gap-6 text-sm">
               <Link href="/privacidad" className="hover:text-primary-400 transition-colors">
-                Politica de privacidad
+                Política de privacidad
               </Link>
               <Link href="/cookies" className="hover:text-primary-400 transition-colors">
                 Cookies

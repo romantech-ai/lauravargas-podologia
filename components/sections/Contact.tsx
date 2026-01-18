@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 
 const services = [
   'Quiropodia',
-  'Unas Encarnadas',
-  'Estudio Biomecanico',
+  'Uñas Encarnadas',
+  'Estudio Biomecánico',
   'Plantillas Personalizadas',
-  'Podologia Deportiva',
-  'Pie Diabetico',
+  'Podología Deportiva',
+  'Pie Diabético',
   'Papilomas/Verrugas',
   'Ortesis de Silicona',
   'Otro'
@@ -56,7 +56,7 @@ export function Contact() {
             Pide tu cita
           </h2>
           <p className="text-lg text-gray-600">
-            Estamos aqui para ayudarte. Contacta con nosotros y te atenderemos lo antes posible.
+            Estamos aquí para ayudarte. Contacta con nosotros y te atenderemos lo antes posible.
           </p>
         </motion.div>
 
@@ -79,7 +79,7 @@ export function Contact() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-1">Telefono</h3>
+                <h3 className="font-semibold text-gray-900 mb-1">Teléfono</h3>
                 <p className="text-primary-600 font-medium">659 26 88 58</p>
               </a>
 
@@ -96,7 +96,7 @@ export function Contact() {
                   </svg>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">WhatsApp</h3>
-                <p className="text-green-600 font-medium">Escribenos</p>
+                <p className="text-green-600 font-medium">Escríbenos</p>
               </a>
 
               {/* Location */}
@@ -112,8 +112,8 @@ export function Contact() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-1">Direccion</h3>
-                <p className="text-gray-600 text-sm">C/ Santo Domingo 26<br />13600 Alcazar de San Juan</p>
+                <h3 className="font-semibold text-gray-900 mb-1">Dirección</h3>
+                <p className="text-gray-600 text-sm">C/ Santo Domingo 26<br />13600 Alcázar de San Juan</p>
               </a>
 
               {/* Schedule */}
@@ -140,7 +140,7 @@ export function Contact() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicacion Clinica Podologica Laura Vargas"
+                title="Ubicación Clínica Podológica Laura Vargas"
               />
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Calle+Santo+Domingo+26+13600+Alcazar+de+San+Juan+Ciudad+Real"
@@ -208,7 +208,7 @@ export function Contact() {
                   {/* Phone */}
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Telefono *
+                      Teléfono *
                     </label>
                     <input
                       type="tel"
@@ -217,14 +217,14 @@ export function Contact() {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-3 bg-white border-2 border-gray-100 rounded-xl transition-all duration-200 focus:outline-none focus:border-primary-500 hover:border-gray-200"
-                      placeholder="Tu telefono"
+                      placeholder="Tu teléfono"
                     />
                   </div>
 
                   {/* Service */}
                   <div>
                     <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                      Servicio de interes
+                      Servicio de interés
                     </label>
                     <select
                       id="service"
@@ -250,7 +250,7 @@ export function Contact() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="w-full px-4 py-3 bg-white border-2 border-gray-100 rounded-xl transition-all duration-200 focus:outline-none focus:border-primary-500 hover:border-gray-200 resize-none"
-                      placeholder="Cuentanos en que podemos ayudarte..."
+                      placeholder="Cuéntanos en qué podemos ayudarte..."
                     />
                   </div>
 
@@ -282,7 +282,7 @@ export function Contact() {
 
                   <p className="text-center text-sm text-gray-500">
                     Al enviar aceptas nuestra{' '}
-                    <a href="/privacidad" className="text-primary-600 hover:underline">politica de privacidad</a>
+                    <a href="/privacidad" className="text-primary-600 hover:underline">política de privacidad</a>
                   </p>
                 </form>
               )}

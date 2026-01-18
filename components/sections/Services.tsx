@@ -9,9 +9,9 @@ const services = [
       </svg>
     ),
     title: 'Quiropodia',
-    description: 'Tratamiento completo de callos, durezas, unas y cuidado general del pie. Ideal para mantenimiento regular.',
+    description: 'Tratamiento completo de callos, durezas, uñas y cuidado general del pie. Ideal para mantenimiento regular.',
     price: 'Desde 25€',
-    features: ['Corte y limado de unas', 'Eliminacion de callos', 'Tratamiento de grietas']
+    features: ['Corte y limado de uñas', 'Eliminación de callos', 'Tratamiento de grietas']
   },
   {
     icon: (
@@ -19,10 +19,10 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
       </svg>
     ),
-    title: 'Unas Encarnadas',
-    description: 'Tratamiento especializado con tecnicas minimamente invasivas y seguimiento personalizado.',
+    title: 'Uñas Encarnadas',
+    description: 'Tratamiento especializado con técnicas mínimamente invasivas y seguimiento personalizado.',
     price: 'Desde 35€',
-    features: ['Diagnostico preciso', 'Reeducacion ungueal', 'Seguimiento incluido']
+    features: ['Diagnóstico preciso', 'Reeducación ungueal', 'Seguimiento incluido']
   },
   {
     icon: (
@@ -30,10 +30,10 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
       </svg>
     ),
-    title: 'Estudio Biomecanico',
-    description: 'Analisis completo de tu pisada para prevenir lesiones y mejorar tu rendimiento.',
+    title: 'Estudio Biomecánico',
+    description: 'Análisis completo de tu pisada para prevenir lesiones y mejorar tu rendimiento.',
     price: 'Desde 80€',
-    features: ['Analisis de la marcha', 'Deteccion de desequilibrios', 'Informe detallado']
+    features: ['Análisis de la marcha', 'Detección de desequilibrios', 'Informe detallado']
   },
   {
     icon: (
@@ -44,7 +44,7 @@ const services = [
     title: 'Plantillas Personalizadas',
     description: 'Plantillas a medida con materiales de alta calidad. Ajustes incluidos.',
     price: 'Desde 120€',
-    features: ['Diseno a medida', 'Materiales premium', 'Garantia de confort']
+    features: ['Diseño a medida', 'Materiales premium', 'Garantía de confort']
   },
   {
     icon: (
@@ -52,10 +52,10 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
-    title: 'Podologia Deportiva',
-    description: 'Prevencion y tratamiento de lesiones para deportistas. Fascitis plantar, metatarsalgias.',
+    title: 'Podología Deportiva',
+    description: 'Prevención y tratamiento de lesiones para deportistas. Fascitis plantar, metatarsalgias.',
     price: 'Consultar',
-    features: ['Prevencion de lesiones', 'Fascitis plantar', 'Asesoramiento calzado']
+    features: ['Prevención de lesiones', 'Fascitis plantar', 'Asesoramiento calzado']
   },
   {
     icon: (
@@ -63,10 +63,10 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8" />
       </svg>
     ),
-    title: 'Pie Diabetico',
-    description: 'Revisiones preventivas y tratamiento especializado. Coordinacion con otros especialistas.',
+    title: 'Pie Diabético',
+    description: 'Revisiones preventivas y tratamiento especializado. Coordinación con otros especialistas.',
     price: 'Consultar',
-    features: ['Revisiones periodicas', 'Tratamiento de ulceras', 'Educacion al paciente']
+    features: ['Revisiones periódicas', 'Tratamiento de úlceras', 'Educación al paciente']
   },
   {
     icon: (
@@ -75,9 +75,9 @@ const services = [
       </svg>
     ),
     title: 'Papilomas/Verrugas',
-    description: 'Diagnostico y multiples opciones de tratamiento. Seguimiento hasta resolucion.',
+    description: 'Diagnóstico y múltiples opciones de tratamiento. Seguimiento hasta resolución.',
     price: 'Desde 60€',
-    features: ['Diagnostico diferencial', 'Tratamiento efectivo', 'Seguimiento completo']
+    features: ['Diagnóstico diferencial', 'Tratamiento efectivo', 'Seguimiento completo']
   },
   {
     icon: (
@@ -110,7 +110,7 @@ export function Services() {
             Tratamientos especializados para tus pies
           </h2>
           <p className="text-lg text-gray-600">
-            Ofrecemos una amplia gama de servicios podologicos con la maxima profesionalidad y cuidado
+            Ofrecemos una amplia gama de servicios podológicos con la máxima profesionalidad y cuidado
           </p>
         </motion.div>
 

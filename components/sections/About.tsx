@@ -8,8 +8,8 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
-    title: 'Formacion actualizada',
-    description: 'Grado en Podologia con formacion continua en las tecnicas mas avanzadas'
+    title: 'Formación actualizada',
+    description: 'Grado en Podología con formación continua en las técnicas más avanzadas'
   },
   {
     icon: (
@@ -18,7 +18,7 @@ const features = [
       </svg>
     ),
     title: 'Trato cercano',
-    description: 'Cada paciente recibe atencion personalizada en un ambiente de confianza'
+    description: 'Cada paciente recibe atención personalizada en un ambiente de confianza'
   },
   {
     icon: (
@@ -27,7 +27,7 @@ const features = [
       </svg>
     ),
     title: 'Instalaciones modernas',
-    description: 'Clinica equipada con tecnologia de ultima generacion y maxima higiene'
+    description: 'Clínica equipada con tecnología de última generación y máxima higiene'
   },
   {
     icon: (
@@ -77,7 +77,7 @@ export function About() {
                 transition={{ duration: 5, repeat: Infinity }}
               >
                 <p className="text-3xl font-bold text-primary-600">100%</p>
-                <p className="text-sm text-gray-600">Satisfaccion</p>
+                <p className="text-sm text-gray-600">Satisfacción</p>
               </motion.div>
             </div>
           </motion.div>
@@ -89,7 +89,7 @@ export function About() {
             viewport={{ once: true }}
           >
             <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
-              Sobre mi
+              Sobre mí
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -99,19 +99,19 @@ export function About() {
 
             <div className="space-y-4 text-gray-600 mb-8">
               <p className="text-lg leading-relaxed">
-                Soy podologa titulada con <strong className="text-gray-900">Grado en Podologia</strong> y
-                una pasion por el cuidado integral de los pies. Mi objetivo es que cada paciente
-                salga de la consulta con la mejor solucion para su problema.
+                Soy podóloga titulada con <strong className="text-gray-900">Grado en Podología</strong> y
+                una pasión por el cuidado integral de los pies. Mi objetivo es que cada paciente
+                salga de la consulta con la mejor solución para su problema.
               </p>
               <p className="leading-relaxed">
-                Aunque soy joven, mi formacion esta completamente actualizada con las tecnicas
-                mas modernas y efectivas del sector. Esto, combinado con mi trato cercano y
-                la atencion personalizada que ofrezco, hace que mis pacientes se sientan
+                Aunque soy joven, mi formación está completamente actualizada con las técnicas
+                más modernas y efectivas del sector. Esto, combinado con mi trato cercano y
+                la atención personalizada que ofrezco, hace que mis pacientes se sientan
                 en las mejores manos.
               </p>
               <p className="leading-relaxed">
-                En mi clinica en Alcazar de San Juan encontraras un espacio <strong className="text-gray-900">moderno,
-                seguro y acogedor</strong>, donde cada detalle esta pensado para tu comodidad y bienestar.
+                En mi clínica en Alcázar de San Juan encontrarás un espacio <strong className="text-gray-900">moderno,
+                seguro y acogedor</strong>, donde cada detalle está pensado para tu comodidad y bienestar.
               </p>
             </div>
 
@@ -144,7 +144,7 @@ export function About() {
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 bg-primary-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg shadow-primary-600/25 hover:bg-primary-700 transition-colors"
             >
-              Conoceme en consulta
+              Conóceme en consulta
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

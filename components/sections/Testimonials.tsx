@@ -5,27 +5,45 @@ import { motion, AnimatePresence } from 'framer-motion'
 const testimonials = [
   {
     id: 1,
-    name: 'Maria Garcia',
-    content: 'Laura se convertira en tu podologa de confianza. Con los pies se anda, y no se puede andar con cualquiera! Muy profesional y cercana.',
-    rating: 5
+    name: 'Ana Gómez',
+    content: 'Laura es toda una profesional. Hace un trabajo extraordinario y limpio. Te trata muy humilde, te hace sentir como en casa. Limpieza absoluta.',
+    rating: 5,
+    time: 'Hace 6 meses'
   },
   {
     id: 2,
-    name: 'Antonio Rodriguez',
-    content: 'Instalaciones muy completas y seguras. El trato es inmejorable y con mucha delicadeza. Mi familia y yo estamos encantados.',
-    rating: 5
+    name: 'Elena Cabañas López',
+    content: 'Laura se convertirá en tu podóloga de confianza... porque con los pies se anda, ¡y no se puede andar con cualquiera!',
+    rating: 5,
+    time: 'Hace 4 años'
   },
   {
     id: 3,
-    name: 'Carmen Lopez',
-    content: 'A pesar de su juventud, es una gran profesional. Recomendable al 100%. Me soluciono un problema de unas encarnadas que llevaba meses.',
-    rating: 5
+    name: 'Marisol Granados',
+    content: 'Laura es una gran profesional, a pesar de su juventud. Su trato es muy agradable y te hace sentir muy a gusto. La recomiendo 100%.',
+    rating: 5,
+    time: 'Hace 10 meses'
   },
   {
     id: 4,
-    name: 'Francisco Martinez',
-    content: 'Las plantillas son muy comodas y de calidad. Higiene y profesionalidad impecables. Desde que las uso, se acabaron mis dolores de espalda.',
-    rating: 5
+    name: 'Ángel O. Carrascosa Correas',
+    content: 'Clínica adaptada e instalaciones muy completas y seguras. El trato inmejorable y mucha delicadeza. Las plantillas muy cómodas y de calidad.',
+    rating: 5,
+    time: 'Hace 4 años'
+  },
+  {
+    id: 5,
+    name: 'Pilar Cruz Huertas',
+    content: 'Muy profesional y cercana. Instalaciones modernas y limpieza impecable. Volveré seguro.',
+    rating: 5,
+    time: 'Hace 1 año'
+  },
+  {
+    id: 6,
+    name: 'M. Piedad Pradillo Carretero',
+    content: 'Excelente atención y profesionalidad. Muy recomendable para el cuidado de tus pies.',
+    rating: 5,
+    time: 'Hace 4 años'
   }
 ]
 
@@ -80,7 +98,7 @@ export function Testimonials() {
             Lo que dicen mis pacientes
           </h2>
           <p className="text-primary-100 text-lg">
-            La satisfaccion de mis pacientes es mi mayor recompensa
+            La satisfacción de mis pacientes es mi mayor recompensa
           </p>
         </motion.div>
 
@@ -144,7 +162,7 @@ export function Testimonials() {
                     </div>
                     <div>
                       <p className="font-bold text-lg">{testimonials[current].name}</p>
-                      <p className="text-primary-200">Paciente</p>
+                      <p className="text-primary-200">{testimonials[current].time}</p>
                     </div>
                   </div>
                 </div>
@@ -180,7 +198,7 @@ export function Testimonials() {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-4 flex items-center gap-4">
             <div className="flex items-center gap-1">
               {[1, 2, 3, 4, 5].map((i) => (
-                <span key={i} className="text-yellow-400 text-xl">★</span>
+                <span key={i} className={`text-xl ${i <= 4 ? 'text-yellow-400' : 'text-yellow-400/50'}`}>★</span>
               ))}
             </div>
             <div className="h-8 w-px bg-white/20" />
@@ -192,8 +210,8 @@ export function Testimonials() {
                 <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
               </svg>
               <div>
-                <p className="font-bold">5.0 de 5</p>
-                <p className="text-sm text-primary-200">Resenas en Google</p>
+                <p className="font-bold">4.6 de 5</p>
+                <p className="text-sm text-primary-200">10 reseñas en Google</p>
               </div>
             </div>
           </div>

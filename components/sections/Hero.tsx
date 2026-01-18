@@ -36,7 +36,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               className="inline-block px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6"
             >
-              Tu podologa de confianza en Alcazar de San Juan
+              Tu podóloga de confianza en Alcázar de San Juan
             </motion.span>
 
             {/* Title */}
@@ -66,7 +66,7 @@ export function Hero() {
               className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed"
             >
               Profesionalidad y trato cercano en cada consulta.
-              Instalaciones modernas, tecnicas actualizadas y la dedicacion
+              Instalaciones modernas, técnicas actualizadas y la dedicación
               que tus pies merecen.
             </motion.p>
 
@@ -120,11 +120,11 @@ export function Hero() {
               <div className="flex items-center gap-2">
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <span key={i} className="text-yellow-400 text-xl">★</span>
+                    <span key={i} className={`text-xl ${i <= 4 ? 'text-yellow-400' : 'text-yellow-400/50'}`}>★</span>
                   ))}
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">5.0</p>
+                  <p className="text-sm font-semibold text-gray-900">4.6</p>
                   <p className="text-xs text-gray-500">en Google</p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export function Hero() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-gray-900">Titulada</p>
-                  <p className="text-xs text-gray-500">Grado en Podologia</p>
+                  <p className="text-xs text-gray-500">Grado en Podología</p>
                 </div>
               </div>
             </motion.div>
@@ -182,7 +182,7 @@ export function Hero() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm">Cita confirmada</p>
-                    <p className="text-xs text-gray-500">Manana a las 10:00</p>
+                    <p className="text-xs text-gray-500">Mañana a las 10:00</p>
                   </div>
                 </div>
               </motion.div>
@@ -195,8 +195,8 @@ export function Hero() {
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">⭐</span>
                   <div>
-                    <p className="font-bold text-gray-900">5.0/5</p>
-                    <p className="text-xs text-gray-500">Resenas Google</p>
+                    <p className="font-bold text-gray-900">4.6/5</p>
+                    <p className="text-xs text-gray-500">Reseñas Google</p>
                   </div>
                 </div>
               </motion.div>

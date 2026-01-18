@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const navItems = [
   { label: 'Servicios', href: '#servicios' },
-  { label: 'Sobre mi', href: '#sobre-mi' },
+  { label: 'Sobre mí', href: '#sobre-mi' },
   { label: 'Testimonios', href: '#testimonios' },
   { label: 'Contacto', href: '#contacto' },
 ]
@@ -52,7 +52,7 @@ export function Navbar() {
                 <span className="text-xl font-bold text-gray-900">
                   Laura<span className="text-primary-600">Vargas</span>
                 </span>
-                <span className="block text-xs text-gray-500 -mt-1">Podologia</span>
+                <span className="block text-xs text-gray-500 -mt-1">Podología</span>
               </div>
             </Link>
 
