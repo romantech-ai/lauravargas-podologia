@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================================
+   VARIABLES CSS - Clinica Podologica Laura Vargas
+   ================================================ */
+:root {
+  /* Primary - Teal */
+  --primary: #0d9488;
+  --primary-light: #14b8a6;
+  --primary-dark: #0f766e;
+  --primary-50: #f0fdfa;
+  --primary-100: #ccfbf1;
+  --primary-600: #0d9488;
+
+  /* Accent - Coral */
+  --accent: #f97316;
+  --accent-50: #fff7ed;
+
+  /* Neutrals */
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --muted: #64748b;
+
+  /* Border radius */
+  --radius: 0.75rem;
+}
+
+/* ================================================
+   BASE STYLES
+   ================================================ */
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+
+  html {
+    @apply scroll-smooth antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-primary-100 text-primary-900;
+  }
+
+  /* Focus visible */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-gray-900;
+  }
+
+  /* Links */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Images */
+  img {
+    @apply max-w-full h-auto;
+  }
+}
+
+/* ================================================
+   COMPONENT STYLES
+   ================================================ */
+@layer components {
+  /* Section spacing */
+  .section {
+    @apply py-24 lg:py-32;
+  }
+
+  .section-sm {
+    @apply py-16 lg:py-24;
+  }
+
+  /* Section headers */
+  .section-header {
+    @apply text-center max-w-2xl mx-auto mb-16;
+  }
+
+  .section-badge {
+    @apply inline-block px-4 py-1.5 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4;
+  }
+
+  .section-title {
+    @apply text-4xl lg:text-5xl font-bold text-gray-900 mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 rounded-full;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white px-8 py-4 shadow-lg shadow-primary-600/25 hover:bg-primary-700 hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-gray-700 px-8 py-4 border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-2;
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl;
+  }
+
+  /* Input styles */
+  .input {
+    @apply w-full px-4 py-3 bg-white border-2 border-gray-100 rounded-xl transition-all duration-200;
+    @apply focus:outline-none focus:border-primary-500 hover:border-gray-200;
+  }
+}
+
+/* ================================================
+   UTILITY STYLES
+   ================================================ */
+@layer utilities {
+  /* Text balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Hide scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Animation delays */
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+}
+
+/* ================================================
+   RESPONSIVE TYPOGRAPHY
+   ================================================ */
+@media (max-width: 640px) {
+  .section-title {
+    @apply text-3xl;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+}
